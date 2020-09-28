@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container-principal { /* Vamos usar essa class para alterar a cor e o estilo da fonte que nossa página terá.*/
+    font-family: Arial, Helvetica, sans-serif;
+    color: black; /*Cor da letra*/
+}
+
+header { /* Formatação do topo da página*/
+    width: 100%;
+    height: 90px;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    cursor: crosshair;
+    line-height: 4em;
+   
+    /* display: block; */
+    /* text-align: right; */
+    /* position: relative; */
+     /* height: 5em; */
+    /* cursor: context-menu; */    
+    
+}
+
+.logo {
+    position: absolute;
+    /* width: 300px; */
+    /* height: auto; */
+}
+.logo img {
+
+    width: 143px;
+    height: 125px;
+    margin-left: 20%;
+}
+
+nav {
+    position: absolute; 
+    right: 30px; bottom: 0px;
+}
+
+nav ul li {
+    float: left; color: #fff; width: auto; margin: 0.8em;
+    font-size: 1.0em; font-weight: 700; text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif; 
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none; color: #fff;
+}
+nav ul li a:hover {
+    color: #b13030;
+}
+/* --------------------------------------------------------------------------- */
+
+nav > ul {
+    display: table;
+    margin: 10px auto 5px;
+}
+ 
+nav > ul > li {
+    float: left;
+}
+.submenu {
+    background: black;
+    padding: 0;
+}
+.submenu li {
+    margin: 10px;
+}
+nav .submenu {
+    display: none;
+
+}
+nav li:hover .submenu {
+    display: inline-block;
+    position: absolute;
+    
+}
